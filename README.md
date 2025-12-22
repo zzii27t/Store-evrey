@@ -1,71 +1,71 @@
 <div align="center">
 
-# 🤖 بوت تيليجرام لبيع المنتجات الرقمية
+# 🤖 Telegram Digital Products Sales Bot
 
-### 💎 بيع المنتجات الرقمية بسهولة وأمان عبر Telegram Stars
+### 💎 Sell Digital Products Easily and Securely via Telegram Stars
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Telegraf](https://img.shields.io/badge/Telegraf-4.16+-blue.svg)](https://telegraf.js.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-2.39+-purple.svg)](https://supabase.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**نظام متكامل لبيع الاشتراكات والمنتجات الرقمية بأسعار تنافسية**
+**Complete system for selling subscriptions and digital products at competitive prices**
 
-[المميزات](#-المميزات) • [التثبيت](#-التثبيت) • [الاستخدام](#-الاستخدام) • [البنية](#-البنية)
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Structure](#-structure)
 
 ---
 
 </div>
 
-## 📋 نظرة عامة
+## 📋 Overview
 
-بوت تيليجرام احترافي لبيع المنتجات الرقمية (مثل اشتراكات ChatGPT وغيرها) عبر نظام دفع آمن باستخدام **Telegram Stars**. يوفر تجربة سلسة للمستخدمين وإدارة سهلة للمسؤولين.
+A professional Telegram bot for selling digital products (such as ChatGPT subscriptions and more) through a secure payment system using **Telegram Stars**. Provides a smooth experience for users and easy management for administrators.
 
-### ✨ لماذا هذا البوت؟
+### ✨ Why This Bot?
 
-- 💰 **أسعار تنافسية** - بيع المنتجات بأسعار أقل من الأسواق التقليدية
-- 🔒 **دفع آمن** - استخدام Telegram Stars المدمج في تيليجرام
-- ⚡ **سهولة الاستخدام** - واجهة بسيطة وسريعة
-- 📊 **إدارة متكاملة** - نظام موافقة/رفض للطلبات
-- 🚀 **جاهز للنشر** - يعمل على Render وغيره من المنصات
-
----
-
-## 🌟 المميزات
-
-### للمستخدمين 👥
-- ✅ واجهة سهلة ومباشرة
-- ✅ دفع آمن عبر Telegram Stars
-- ✅ إشعارات فورية عن حالة الطلب
-- ✅ لا حاجة لحسابات خارجية
-
-### للمسؤولين 👨‍💼
-- ✅ لوحة تحكم بسيطة عبر تيليجرام
-- ✅ إشعارات فورية لكل طلب جديد
-- ✅ نظام موافقة/رفض سريع
-- ✅ تخزين آمن للبيانات في Supabase
-- ✅ سجل كامل للطلبات والمدفوعات
-
-### تقنية 🔧
-- ✅ دعم Webhook و Polling
-- ✅ معالجة أخطاء متقدمة
-- ✅ سجلات تفصيلية
-- ✅ جاهز للإنتاج
+- 💰 **Competitive Prices** - Sell products at lower prices than traditional markets
+- 🔒 **Secure Payment** - Using Telegram Stars integrated in Telegram
+- ⚡ **Easy to Use** - Simple and fast interface
+- 📊 **Complete Management** - Approval/rejection system for orders
+- 🚀 **Production Ready** - Works on Render and other platforms
 
 ---
 
-## 🚀 التثبيت
+## 🌟 Features
 
-### المتطلبات الأساسية
+### For Users 👥
+- ✅ Simple and straightforward interface
+- ✅ Secure payment via Telegram Stars
+- ✅ Instant notifications about order status
+- ✅ No need for external accounts
 
-- [Node.js](https://nodejs.org/) 16 أو أحدث
-- حساب [Telegram Bot](https://t.me/BotFather)
-- حساب [Supabase](https://supabase.com)
-- حساب [Render](https://render.com) (للنشر)
+### For Administrators 👨‍💼
+- ✅ Simple dashboard via Telegram
+- ✅ Instant notifications for each new order
+- ✅ Fast approval/rejection system
+- ✅ Secure data storage in Supabase
+- ✅ Complete log of orders and payments
+
+### Technical 🔧
+- ✅ Webhook and Polling support
+- ✅ Advanced error handling
+- ✅ Detailed logging
+- ✅ Production ready
 
 ---
 
-### خطوة 1️⃣: استنساخ المشروع
+## 🚀 Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 16 or higher
+- [Telegram Bot](https://t.me/BotFather) account
+- [Supabase](https://supabase.com) account
+- [Render](https://render.com) account (for deployment)
+
+---
+
+### Step 1️⃣: Clone the Project
 
 ```bash
 git clone <repository-url>
@@ -75,15 +75,15 @@ npm install
 
 ---
 
-### خطوة 2️⃣: إعداد متغيرات البيئة
+### Step 2️⃣: Setup Environment Variables
 
-انسخ ملف `.env.example` إلى `.env`:
+Copy the `.env.example` file to `.env`:
 
 ```bash
 cp env.example .env
 ```
 
-عدّل ملف `.env` وأضف القيم التالية:
+Edit the `.env` file and add the following values:
 
 ```env
 # Telegram Bot Configuration
@@ -105,264 +105,268 @@ PAYMENT_CURRENCY=XTR
 
 ---
 
-### خطوة 3️⃣: الحصول على Bot Token
+### Step 3️⃣: Get Bot Token
 
-1. اذهب إلى [@BotFather](https://t.me/BotFather) على تيليجرام
-2. أرسل `/newbot` واتبع التعليمات
-3. احفظ الـ **Token** الذي يعطيك إياه
-4. ضعه في `BOT_TOKEN` في ملف `.env`
-
----
-
-### خطوة 4️⃣: معرفة Founder ID
-
-1. اذهب إلى [@userinfobot](https://t.me/userinfobot) على تيليجرام
-2. أرسل `/start`
-3. احفظ الـ **ID** الذي يعطيك إياه
-4. ضعه في `FOUNDER_ID` في ملف `.env`
+1. Go to [@BotFather](https://t.me/BotFather) on Telegram
+2. Send `/newbot` and follow the instructions
+3. Save the **Token** he gives you
+4. Put it in `BOT_TOKEN` in the `.env` file
 
 ---
 
-### خطوة 5️⃣: إعداد Supabase
+### Step 4️⃣: Get Founder ID
 
-#### 5.1 إنشاء المشروع
-1. أنشئ حساب على [Supabase](https://supabase.com)
-2. أنشئ مشروع جديد
-3. انتظر حتى يكتمل الإعداد
-
-#### 5.2 إعداد قاعدة البيانات
-1. اذهب إلى **SQL Editor** في Supabase
-2. افتح ملف `database.sql` من المشروع
-3. انسخ المحتوى كاملاً
-4. الصقه في SQL Editor
-5. اضغط **Run** لتنفيذ الكود
-
-#### 5.3 الحصول على API Keys
-1. اذهب إلى **Settings** > **API**
-2. انسخ **Project URL** وضعها في `SUPABASE_URL`
-3. انسخ **anon/public key** وضعها في `SUPABASE_KEY`
+1. Go to [@userinfobot](https://t.me/userinfobot) on Telegram
+2. Send `/start`
+3. Save the **ID** he gives you
+4. Put it in `FOUNDER_ID` in the `.env` file
 
 ---
 
-### خطوة 6️⃣: التشغيل المحلي
+### Step 5️⃣: Setup Supabase
+
+#### 5.1 Create Project
+1. Create an account on [Supabase](https://supabase.com)
+2. Create a new project
+3. Wait until setup is complete
+
+#### 5.2 Setup Database
+1. Go to **SQL Editor** in Supabase
+2. Open the `database.sql` file from the project
+3. Copy the entire content
+4. Paste it in SQL Editor
+5. Click **Run** to execute the code
+
+#### 5.3 Get API Keys
+1. Go to **Settings** > **API**
+2. Copy **Project URL** and put it in `SUPABASE_URL`
+3. Copy **anon/public key** and put it in `SUPABASE_KEY`
+
+---
+
+### Step 6️⃣: Run Locally
 
 ```bash
-# للتشغيل العادي
+# For normal run
 npm start
 
-# للتطوير مع إعادة التشغيل التلقائي
+# For development with auto-restart
 npm run dev
 ```
 
 ---
 
-## 📦 النشر على Render
+## 📦 Deploy on Render
 
-### 1. إنشاء حساب Render
-- اذهب إلى [Render](https://render.com)
-- سجّل حساب جديد (يمكن استخدام GitHub)
+### 1. Create Render Account
+- Go to [Render](https://render.com)
+- Sign up for a new account (can use GitHub)
 
-### 2. إنشاء Web Service
-1. اضغط **New** > **Web Service**
-2. وصّل GitHub repository
-3. املأ الإعدادات:
-   - **Name**: اختر اسماً للمشروع
+### 2. Create Web Service
+1. Click **New** > **Web Service**
+2. Connect GitHub repository
+3. Fill in the settings:
+   - **Name**: Choose a name for the project
    - **Environment**: `Node`
    - **Build Command**: `npm install`
    - **Start Command**: `node index.js`
-   - **Plan**: اختر الخطة المناسبة
+   - **Plan**: Choose the appropriate plan
 
-### 3. إضافة Environment Variables
-في قسم **Environment Variables**، أضف جميع المتغيرات من ملف `.env`:
+### 3. Add Environment Variables
+In the **Environment Variables** section, add all variables from the `.env` file:
 - `BOT_TOKEN`
 - `FOUNDER_ID`
 - `SUPABASE_URL`
 - `SUPABASE_KEY`
-- `PORT` (اختياري، افتراضي: 3000)
-- `WEBHOOK_URL` (سيتم ملؤه بعد النشر)
+- `PORT` (optional, default: 3000)
+- `WEBHOOK_URL` (will be filled after deployment)
 - `PAYMENT_AMOUNT`
 - `PAYMENT_CURRENCY`
 
-### 4. الحصول على Webhook URL
-1. بعد النشر، Render سيعطيك URL مثل: `https://your-app.onrender.com`
-2. انسخ هذا الـ URL
-3. أضفه في Environment Variables كـ `WEBHOOK_URL`
-4. أعد نشر المشروع
+### 4. Get Webhook URL
+1. After deployment, Render will give you a URL like: `https://your-app.onrender.com`
+2. Copy this URL
+3. Add it in Environment Variables as `WEBHOOK_URL`
+4. Redeploy the project
 
 ---
 
-## 💻 الاستخدام
+## 💻 Usage
 
-### للمستخدمين
+### For Users
 
-1. **ابدأ البوت**
+1. **Start the Bot**
    ```
    /start
    ```
 
-2. **اضغط على زر "🛒 الحصول على الباقات"**
+2. **Click on "🛒 Get Subscription" button**
 
-3. **ادفع عبر Telegram Stars**
-   - سيظهر لك فاتورة الدفع
-   - اضغط **Pay** وادفع باستخدام Stars
+3. **Pay via Telegram Stars**
+   - A payment invoice will appear
+   - Click **Pay** and pay using Stars
 
-4. **أدخل الإيميل**
-   - بعد الدفع الناجح، سيطلب البوت الإيميل
-   - أدخل الإيميل المطلوب
+4. **Enter Email**
+   - After successful payment, the bot will request email
+   - Enter the required email
 
-5. **انتظر الموافقة**
-   - سيتم إرسال إشعار للمسؤول
-   - بعد الموافقة، ستصلك رسالة التفعيل
+5. **Wait for Approval**
+   - A notification will be sent to the administrator
+   - After approval, you will receive the activation message
 
-### للمسؤولين
+### For Administrators
 
-عند وصول طلب جديد، ستصلك رسالة تحتوي على:
-- معلومات المستخدم
-- الإيميل المدخل
-- مبلغ الدفع
-- رقم الطلب
+When a new order arrives, you will receive a message containing:
+- User information
+- Entered email
+- Payment amount
+- Order number
 
-**الخيارات المتاحة:**
-- ✅ **تم إنهاء العملية** - للموافقة على الطلب
-- ❌ **مرفوض** - لرفض الطلب
+**Available Options:**
+- ✅ **Approved** - To approve the order
+- ❌ **Rejected** - To reject the order
 
 ---
 
-## 📁 البنية
+## 📁 Structure
 
 ```
 telegram-subscription-bot/
-├── 📄 index.js              # Express server و webhook handler
-├── 🤖 bot.js                # منطق البوت الرئيسي
-├── 🗄️  supabase.js           # الاتصال بـ Supabase
-├── 📊 database.sql           # مخطط قاعدة البيانات
-├── 📦 package.json           # التبعيات والإعدادات
-├── 🔐 env.example            # مثال لمتغيرات البيئة
-└── 📖 README.md             # هذا الملف
+├── 📄 index.js              # Express server and webhook handler
+├── 🤖 bot.js                # Main bot logic
+├── 🗄️  supabase.js           # Supabase connection
+├── 📊 database.sql           # Database schema
+├── 📦 package.json           # Dependencies and settings
+├── 🔐 env.example            # Environment variables example
+└── 📖 README.md             # This file
 ```
 
 ---
 
-## 🔄 سير العمل
+## 🔄 Workflow
 
-```mermaid
-graph LR
-    A[المستخدم يبدأ البوت] --> B[يضغط على زر الشراء]
-    B --> C[يدفع عبر Telegram Stars]
-    C --> D[يدخل الإيميل]
-    D --> E[إشعار للمسؤول]
-    E --> F{قرار المسؤول}
-    F -->|موافقة| G[رسالة نجاح للمستخدم]
-    F -->|رفض| H[رسالة رفض للمستخدم]
+```
+User starts bot
+    ↓
+Clicks "Get Subscription" button
+    ↓
+Pays via Telegram Stars
+    ↓
+Enters email
+    ↓
+Notification sent to admin
+    ↓
+Admin approves/rejects
+    ↓
+User receives confirmation/rejection message
 ```
 
 ---
 
-## 🗄️ قاعدة البيانات
+## 🗄️ Database
 
-### جدول `subscriptions`
+### `subscriptions` Table
 
-| العمود | النوع | الوصف |
-|--------|-------|-------|
-| `id` | BIGSERIAL | المعرف الفريد (Primary Key) |
-| `user_id` | BIGINT | معرف المستخدم في تيليجرام |
-| `username` | VARCHAR(255) | اسم المستخدم |
-| `email` | VARCHAR(255) | الإيميل (يمكن أن يكون NULL) |
-| `status` | VARCHAR(50) | الحالة: pending, approved, rejected |
-| `payment_amount` | INTEGER | مبلغ الدفع |
-| `payment_currency` | VARCHAR(10) | عملة الدفع (XTR) |
-| `created_at` | TIMESTAMP | تاريخ الإنشاء |
-| `updated_at` | TIMESTAMP | تاريخ آخر تحديث |
-
----
-
-## 🔐 الأمان
-
-- ⚠️ **لا تشارك ملف `.env`** أو ترفعه إلى Git
-- ⚠️ **احمِ API keys** الخاصة بك
-- ⚠️ **استخدم HTTPS فقط** في الإنتاج
-- ⚠️ **راجع الطلبات** قبل الموافقة عليها
+| Column | Type | Description |
+|--------|------|-------------|
+| `id` | BIGSERIAL | Unique identifier (Primary Key) |
+| `user_id` | BIGINT | User ID in Telegram |
+| `username` | VARCHAR(255) | Username |
+| `email` | VARCHAR(255) | Email (can be NULL) |
+| `status` | VARCHAR(50) | Status: pending, approved, rejected |
+| `payment_amount` | INTEGER | Payment amount |
+| `payment_currency` | VARCHAR(10) | Payment currency (XTR) |
+| `created_at` | TIMESTAMP | Creation date |
+| `updated_at` | TIMESTAMP | Last update date |
 
 ---
 
-## 🛠️ التطوير
+## 🔐 Security
 
-### إضافة منتجات جديدة
+- ⚠️ **Don't share `.env` file** or upload it to Git
+- ⚠️ **Protect your API keys**
+- ⚠️ **Use HTTPS only** in production
+- ⚠️ **Review orders** before approving them
 
-لتعديل المنتجات المعروضة، عدّل في `bot.js`:
+---
+
+## 🛠️ Development
+
+### Adding New Products
+
+To modify displayed products, edit in `bot.js`:
 
 ```javascript
 const invoice = {
-  title: 'اسم المنتج',
-  description: 'وصف المنتج',
+  title: 'Product Name',
+  description: 'Product Description',
   // ...
 };
 ```
 
-### تعديل مبلغ الدفع
+### Modifying Payment Amount
 
-عدّل في ملف `.env`:
+Edit in `.env` file:
 ```env
 PAYMENT_AMOUNT=1
 ```
 
 ---
 
-## 🐛 استكشاف الأخطاء
+## 🐛 Troubleshooting
 
-### البوت لا يعمل
-- ✅ تأكد من صحة `BOT_TOKEN`
-- ✅ تأكد من الاتصال بالإنترنت
-- ✅ تأكد من تفعيل البوت من @BotFather
+### Bot Not Working
+- ✅ Check `BOT_TOKEN` is correct
+- ✅ Check internet connection
+- ✅ Check bot is activated from @BotFather
 
-### قاعدة البيانات لا تعمل
-- ✅ تأكد من صحة `SUPABASE_URL` و `SUPABASE_KEY`
-- ✅ تأكد من تنفيذ `database.sql` في Supabase
-- ✅ تحقق من صلاحيات API Key
+### Database Not Working
+- ✅ Check `SUPABASE_URL` and `SUPABASE_KEY` are correct
+- ✅ Check `database.sql` is executed in Supabase
+- ✅ Verify API Key permissions
 
-### Webhook لا يعمل
-- ✅ تأكد من صحة `WEBHOOK_URL`
-- ✅ تأكد من أن السيرفر يعمل على Render
-- ✅ تحقق من السجلات في Render Dashboard
-
----
-
-## 📝 الترخيص
-
-هذا المشروع مرخص تحت [MIT License](LICENSE).
+### Webhook Not Working
+- ✅ Check `WEBHOOK_URL` is correct
+- ✅ Check server is running on Render
+- ✅ Check logs in Render Dashboard
 
 ---
 
-## 🤝 المساهمة
+## 📝 License
 
-نرحب بمساهماتكم! يرجى:
-1. Fork المشروع
-2. إنشاء branch جديد (`git checkout -b feature/AmazingFeature`)
-3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
-4. Push إلى Branch (`git push origin feature/AmazingFeature`)
-5. فتح Pull Request
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📞 الدعم
+## 🤝 Contributing
 
-للمساعدة أو الإبلاغ عن مشاكل:
-- افتح [Issue](https://github.com/your-repo/issues) في المستودع
-- أو راسلنا على تيليجرام
+Contributions are welcome! Please:
+1. Fork the project
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## ⭐ شكر خاص
+## 📞 Support
 
-شكراً لاستخدامك هذا البوت! إذا أعجبك المشروع، لا تنسى ⭐ Star!
+For help or to report issues:
+- Open an [Issue](https://github.com/your-repo/issues) in the repository
+- Or contact us on Telegram
+
+---
+
+## ⭐ Acknowledgments
+
+Thanks for using this bot! If you like the project, don't forget to ⭐ Star it!
 
 ---
 
 <div align="center">
 
-**صُنع بـ ❤️ للمجتمع العربي**
+**Made with ❤️ for the Community**
 
-[⬆ العودة للأعلى](#-بوت-تيليجرام-لبيع-المنتجات-الرقمية)
+[⬆ Back to Top](#-telegram-digital-products-sales-bot)
 
 </div>
-
